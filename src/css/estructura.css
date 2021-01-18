@@ -1,0 +1,76 @@
+.directors, .control {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+.directors h3 , .control h3{
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--primary-color);
+    padding: 20px;
+}
+
+.content-directors, .content-control{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-directors img , .content-control img{
+    width: 40%;
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: var(--primary-color);
+    background-color: royalblue;
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--second-color);
+    margin-left: 50px;
+    transition: all 0.3s ease-in 0s;
+    cursor: pointer;
+}
+
+.link i {
+    font-size: 1.5rem;
+    padding-left: 10px;
+}
+
+.link:hover {
+    background-color: var(--primary-color);
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    .content-directors, .content-control {
+        flex-direction: column;
+    }
+
+    .content-directors img , .content-control img{
+        width: 70%;
+    }
+
+    .link {
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .directors h3 , .control h3{
+        font-size: 1.5rem;
+    }
+
+
+}
